@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amreen Khan | Technical Resume</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<a href="#main" class="skip-link">Skip to Content</a>
+
+<header class="header">
+  <nav class="nav">
+    <h1 class="logo">Amreen<span>.</span></h1>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰</label>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ABOUT -->
+<section id="about" class="section about">
+  <article>
+    <img src="assets/profile.jpg" alt="Profile Photo" class="profile-img">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate Computer Science student focused on frontend engineering,
+      semantic HTML, CSS architecture, and building accessible, production-grade web interfaces.
+    </p>
+  </article>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+    <article class="skill-card">HTML5 & Accessibility</article>
+    <article class="skill-card">CSS3 / Animations</article>
+    <article class="skill-card">JavaScript (ES6+)</article>
+    <article class="skill-card">Responsive Design</article>
+    <article class="skill-card">Git & GitHub</article>
+    <article class="skill-card">UI/UX Fundamentals</article>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+
+    <article class="project-card">
+      <h3>Responsive Navigation System</h3>
+      <p>
+        Designed and implemented a fully responsive navigation bar with
+        sticky positioning, mobile hamburger menu, and smooth scrolling
+        using semantic HTML and pure CSS.
+      </p>
+      <p class="tech">Tech Used: HTML5, CSS3</p>
+    </article>
+
+    <article class="project-card">
+      <h3>Dark Mode Resume Website</h3>
+      <p>
+        Built a production-ready technical resume website featuring
+        site-wide dark mode using CSS variables and JavaScript-based
+        theme toggling.
+      </p>
+      <p class="tech">Tech Used: HTML5, CSS Variables, JavaScript</p>
+    </article>
+
+    <article class="project-card">
+      <h3>Animated UI Components</h3>
+      <p>
+        Created interactive UI components with hover animations,
+        neon button effects, and micro-interactions to enhance
+        user experience and visual feedback.
+      </p>
+      <p class="tech">Tech Used: CSS Animations, Transitions</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <h2>Contact Me</h2>
+
+  <form>
+    <label>
+      Name
+      <input type="text" required>
+    </label>
+
+    <label>
+      Email
+      <input type="email" required>
+    </label>
+
+    <label>
+      Message
+      <textarea required></textarea>
+    </label>
+
+    <button type="submit" class="btn-neon">Send Message</button>
+  </form>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Amreen Khan • </p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

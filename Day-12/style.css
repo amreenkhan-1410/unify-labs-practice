@@ -1,0 +1,143 @@
+
+:root {
+  --clr-primary: #4f46e5;
+  --clr-dark: #111827;
+  --clr-light: #ffffff;
+  --clr-muted: #6b7280;
+
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+
+  --radius: 12px;
+  --transition-fast: 0.3s ease;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--clr-dark);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+.container {
+  max-width: 1100px;
+  margin-inline: auto;
+  padding: var(--spacing-lg);
+}
+
+.section {
+  margin-block: var(--spacing-lg);
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--clr-primary);
+  color: var(--clr-light);
+}
+
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--clr-primary);
+  color: white;
+  padding: 0.5rem;
+}
+
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background: var(--clr-light);
+  z-index: 100;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  gap: var(--spacing-md);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  align-items: center;
+}
+
+.hero-image {
+  border-radius: var(--radius);
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.card {
+  padding: var(--spacing-md);
+  border-radius: var(--radius);
+  background: #f9fafb;
+  text-align: center;
+
+  /* Performance-safe animation */
+  transition: transform var(--transition-fast),
+              opacity var(--transition-fast);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  opacity: 0.95;
+}
+
+
+.site-footer {
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+  padding: var(--spacing-md);
+}

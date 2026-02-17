@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.settings {
+  margin-top: 20px;
+}

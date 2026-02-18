@@ -1,0 +1,76 @@
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Card Collection</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1 class="title">Dashboard Card Collection</h1>
+
+<section class="grid">
+
+  <!-- 3D Flip Card -->
+  <div class="card flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <h2>3D Flip Card</h2>
+        <p>Hover to flip</p>
+      </div>
+      <div class="flip-back">
+        <h2>Back Side</h2>
+        <p>Pure CSS 3D transform</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Glassmorphism Card -->
+  <div class="card glass-card">
+    <img src="https://picsum.photos/400/250" alt="Glass" />
+    <h2>Glassmorphism</h2>
+    <p>Blur + transparency UI</p>
+    <div class="progress">
+      <span style="width: 75%"></span>
+    </div>
+  </div>
+
+  <!-- Animated Border Card -->
+  <div class="card border-card">
+    <h2>Animated Border</h2>
+    <p>Gradient border animation</p>
+    <div class="progress">
+      <span style="width: 60%"></span>
+    </div>
+  </div>
+
+</section>
+
+<!-- FAQ Accordion -->
+<section class="faq">
+  <h2>FAQ</h2>
+
+  <div class="faq-item">
+    <input type="checkbox" id="q1">
+    <label for="q1">What is CSS Grid?</label>
+    <p>CSS Grid is a two-dimensional layout system.</p>
+  </div>
+
+  <div class="faq-item">
+    <input type="checkbox" id="q2">
+    <label for="q2">What is Glassmorphism?</label>
+    <p>A UI trend using blur and transparency.</p>
+  </div>
+
+  <div class="faq-item">
+    <input type="checkbox" id="q3">
+    <label for="q3">Is JavaScript used?</label>
+    <p>No — this project is 100% CSS.</p>
+  </div>
+
+</section>
+
+</body>
+</html>

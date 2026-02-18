@@ -1,0 +1,171 @@
+
+  /* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  padding: 2rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Card Base */
+.card {
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #1e293b;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 3D Flip Card */
+.flip-card {
+  perspective: 1000px;
+  height: 220px;
+}
+
+.flip-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.flip-front {
+  background: #2563eb;
+}
+
+.flip-back {
+  background: #16a34a;
+  transform: rotateY(180deg);
+}
+
+/* Glassmorphism Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  transition: transform 0.4s;
+}
+
+.glass-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Animated Border Card */
+.border-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(90deg, #22d3ee, #a855f7, #22d3ee);
+  background-size: 300%;
+  animation: borderMove 4s linear infinite;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+}
+
+@keyframes borderMove {
+  0% { background-position: 0%; }
+  100% { background-position: 300%; }
+}
+
+/* Progress Bars */
+.progress {
+  margin-top: 1rem;
+  background: #334155;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #38bdf8, #22c55e);
+  animation: load 1.5s ease-in-out forwards;
+}
+
+@keyframes load {
+  from { width: 0; }
+}
+
+/* FAQ Accordion */
+.faq {
+  margin-top: 4rem;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-item input {
+  display: none;
+}
+
+.faq-item label {
+  display: block;
+  padding: 1rem;
+  background: #1e293b;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.faq-item p {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: #020617;
+  padding: 0 1rem;
+}
+
+.faq-item input:checked ~ p {
+  max-height: 100px;
+  padding: 1rem;
+}

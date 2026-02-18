@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Master Data Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>📊 Task Master Data Dashboard</h1>
+
+    <section class="card">
+      <h2>Student Project Tasks</h2>
+      <button onclick="filterTasks()">Filter Tasks</button>
+      <p id="completed"></p>
+      <p id="pending"></p>
+    </section>
+
+    <section class="card">
+      <h2>Project Cost with Tax</h2>
+      <button onclick="calculateTax()">Calculate Prices</button>
+      <ul id="priceList"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Company Budget</h2>
+      <button onclick="calculateBudget()">Calculate Budget</button>
+      <p id="budget"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevConf – Performance Audit</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav container">
+      <h1 class="logo">DevConf</h1>
+
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Icon-only button with ARIA label -->
+      <button class="icon-btn" aria-label="Toggle navigation menu">
+        ☰
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero container">
+      <div class="hero-content">
+        <h2>Building the Future of Web</h2>
+        <p>DevConf brings developers together to learn, share, and innovate.</p>
+        <button class="btn btn-primary">Register Now</button>
+      </div>
+
+      <img 
+        src="conference.jpg" 
+        alt="Developers attending DevConf conference session"
+        class="hero-image"
+      />
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section container">
+      <h3>Why DevConf?</h3>
+      <p>
+        Learn modern web performance, accessibility, and scalable CSS architecture
+        from industry experts.
+      </p>
+    </section>
+
+    <!-- Speakers Grid -->
+    <section id="speakers" class="section container">
+      <h3>Featured Speakers</h3>
+
+      <div class="grid">
+        <article class="card">
+          <img src="speaker1.jpg" alt="Jane Doe, Frontend Architect" />
+          <h4>Jane Doe</h4>
+          <p>Frontend Architect</p>
+        </article>
+
+        <article class="card">
+          <img src="speaker2.jpg" alt="John Smith, Performance Engineer" />
+          <h4>John Smith</h4>
+          <p>Performance Engineer</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="site-footer">
+    <p>&copy; 2026 DevConf. All rights reserved.</p>
+  </footer>
+</body>
+</html>

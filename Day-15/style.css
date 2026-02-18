@@ -1,0 +1,29 @@
+body {
+  background-color: #000;
+  color: #00ff99;
+  font-family: "Courier New", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.terminal {
+  width: 600px;
+  border: 2px solid #00ff99;
+  padding: 20px;
+}
+
+button {
+  margin-top: 10px;
+  background: #00ff99;
+  color: #000;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #00cc77;
+}

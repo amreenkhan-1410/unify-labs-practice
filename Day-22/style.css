@@ -1,0 +1,66 @@
+:root {
+  --bg: #ffffff;
+  --text: #000;
+  --card: #f3f3f3;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #fff;
+  --card: #1e1e1e;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background: var(--card);
+}
+
+.controls {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+#cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.card button {
+  margin-top: 10px;
+}
+
+.loader {
+  height: 50px;
+  width: 50px;
+  border: 5px solid #ccc;
+  border-top: 5px solid #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 2rem auto;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Postman Practice Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>User Manager</h1>
+
+<div class="container">
+
+    <!-- Add User -->
+    <h2>Add User (POST)</h2>
+    <input type="text" id="name" placeholder="Enter name">
+    <input type="number" id="age" placeholder="Enter age">
+    <button onclick="addUser()">Add User</button>
+
+    <!-- Update User -->
+    <h2>Update User (PATCH)</h2>
+    <input type="text" id="updateId" placeholder="Enter user ID">
+    <input type="text" id="updateName" placeholder="New name">
+    <button onclick="updateUser()">Update User</button>
+
+    <!-- Delete User -->
+    <h2>Delete User (DELETE)</h2>
+    <input type="text" id="deleteId" placeholder="Enter user ID">
+    <button onclick="deleteUser()">Delete User</button>
+
+    <!-- Display Users -->
+    <h2>All Users (GET)</h2>
+    <button onclick="getUsers()">Load Users</button>
+
+    <ul id="userList"></ul>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

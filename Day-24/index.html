@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🛒 Product Manager</h1>
+
+<div class="form-container">
+    <input type="text" id="name" placeholder="Product Name">
+    
+    <select id="category">
+        <option value="Electronics">Electronics</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Furniture">Furniture</option>
+    </select>
+
+    <input type="number" id="price" placeholder="Price">
+    <input type="number" id="stock" placeholder="Stock">
+
+    <button onclick="addProduct()">Add Product</button>
+</div>
+
+<div class="buttons">
+    <button onclick="increaseElectronics()">+10 Electronics</button>
+    <button onclick="setFeatured()">Set Featured (>500)</button>
+    <button onclick="deleteOutOfStock()">Delete Stock 0</button>
+    <button onclick="countProducts()">Count Products</button>
+    <button onclick="showAll()">Show All</button>
+</div>
+
+<h3 id="countDisplay"></h3>
+
+<div id="output"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

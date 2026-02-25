@@ -1,0 +1,43 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #000428, #004e92);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    color: black;
+    width: 300px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+input, select {
+    width: 90%;
+    padding: 8px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background: orange;
+    cursor: pointer;
+}
+
+button:hover {
+    background: yellow;
+}
+
+.product {
+    background: white;
+    color: black;
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+}

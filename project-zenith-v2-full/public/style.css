@@ -1,0 +1,60 @@
+
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: white;
+}
+
+.light {
+  --bg: #f3f4f6;
+  --card: white;
+  --text: black;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 30px;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+#blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.post-card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+.hidden {
+  display: none;
+}

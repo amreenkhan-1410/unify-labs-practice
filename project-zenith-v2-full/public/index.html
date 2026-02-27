@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zenith Blogger Core</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1>ZENITH</h1>
+  <button id="theme-toggle">Toggle Theme</button>
+</header>
+
+<form id="post-form">
+  <input type="hidden" id="post-id">
+  <input type="text" id="title" placeholder="Title" required>
+  <input type="text" id="category" placeholder="Category" required>
+  <input type="text" id="author" placeholder="Author" required>
+  <textarea id="content" placeholder="Write your blog..." required></textarea>
+  <button type="submit">Save Post</button>
+</form>
+
+<div id="blog-container"></div>
+<div id="single-view" class="hidden"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

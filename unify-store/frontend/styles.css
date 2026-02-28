@@ -1,0 +1,4 @@
+
+body { font-family: Arial; padding: 20px; }
+.product { border: 1px solid #ddd; padding: 10px; margin: 10px; display: inline-block; }
+button { padding: 5px 10px; cursor: pointer; }

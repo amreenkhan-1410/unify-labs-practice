@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Laptop",
+        "price": 60000,
+        "category": "electronics",
+        "image": "https://via.placeholder.com/200"
+    },
+    {
+        "name": "Headphones",
+        "price": 2000,
+        "category": "electronics",
+        "image": "https://via.placeholder.com/200"
+    },
+    {
+        "name": "Shoes",
+        "price": 3000,
+        "category": "fashion",
+        "image": "https://via.placeholder.com/200"
+    }
+]
